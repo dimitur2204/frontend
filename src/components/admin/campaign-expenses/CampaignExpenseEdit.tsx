@@ -1,5 +1,5 @@
 import { useTranslation } from 'next-i18next'
-import Layout from 'components/layout/Layout'
+import Layout from 'components/client/layout/Layout'
 
 import Form from './Form'
 

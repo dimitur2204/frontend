@@ -8,7 +8,7 @@ import { usePersonList } from 'common/hooks/person'
 import { routes } from 'common/routes'
 import GridActions from 'components/admin/GridActions'
 
-import { ModalStore } from 'components/expenses/ExpensesPage'
+import { ModalStore } from 'components/admin/expenses/ExpensesPage'
 //import DetailsModal from './DetailsModal'
 //import DeleteModal from './DeleteModal'
 //import { statusRenderCell } from './GridHelper'

@@ -2,11 +2,10 @@ import React from 'react'
 
 import { Container } from '@mui/material'
 
-import Layout from 'components/layout/Layout'
+import Layout from 'components/client/layout/Layout'
 
-import CampaignExpensesGrid from '../campaign-expenses/grid/CampaignExpensesGrid'
-import { t } from 'i18next'
-import ExpensesGridAppbar from '../campaign-expenses/grid/CampaignGridAppbar'
+import CampaignExpensesGrid from 'components/admin/campaign-expenses/grid/CampaignExpensesGrid'
+import ExpensesGridAppbar from 'components/admin/campaign-expenses/grid/CampaignGridAppbar'
 import { useViewCampaign } from 'common/hooks/campaigns'
 
 type Props = { slug: string }
