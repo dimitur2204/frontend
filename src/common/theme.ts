@@ -131,6 +131,16 @@ export const themeOptions: ThemeOptions = {
       defaultProps: {
         disableRipple: true,
       },
+      styleOverrides: {
+        // Need a focus style for accessibility, since ripple is disabled
+        // Check
+        root: {
+          '&:focus': {
+            textTransform: 'initial',
+            outline: '2px solid black',
+          },
+        },
+      },
     },
     MuiInputBase: {
       styleOverrides: {
@@ -197,7 +207,6 @@ export const themeOptions: ThemeOptions = {
     },
     h4: { fontFamily: montserrat.style.fontFamily },
     h5: { fontFamily: montserrat.style.fontFamily },
-
     body1: {
       fontSize: '0.875rem',
       lineHeight: '1.43',

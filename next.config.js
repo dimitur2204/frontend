@@ -43,6 +43,7 @@ const moduleExports = {
     domains: [
       process.env.IMAGE_HOST ?? 'localhost',
       process.env.GHOST_API_URL?.replace('https://', '') || 'blog.podkrepi.bg',
+      process.env.NODE_ENV === 'development' ? 'placehold.co' : '',
     ],
   },
   async rewrites() {
